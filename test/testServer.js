@@ -37,6 +37,7 @@ describe('test delete', function () {
         request.delete({ url: url, form: cat }, function (error, response, body) {
             body = JSON.parse(body)
             expect(body.message).to.contain('success');
+            console.log('hello');
             done();
         });
     });
